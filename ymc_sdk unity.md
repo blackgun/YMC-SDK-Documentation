@@ -1,4 +1,5 @@
-# YMC SDK for Unity3D games (beta,haha!!!)
+# YMC SDK for Unity3D games 
+## (beta,haha!!!)
 
 ![Mou icon](http://developer.ymcgames.com/images/ymc-logo.png)
 
