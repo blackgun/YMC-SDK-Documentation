@@ -135,7 +135,7 @@ This API is used to help the users when he forgot his password:
 ## YMCA
 To use YMC Analytics service, please use the APIs declared in the header file YMCA.h:
 
-	#include "YMCU.h"
+	#include "YMCA.h"
 
 ### yaEvent
 Events describe things that happen in your game, usually as the result of user interaction; for example, when a player conquered a level, or purchased some equipment, you can send an event to record the incident.
@@ -158,11 +158,13 @@ Example:
 ### Track custom events
 Sometimes you might want to track other specific things happened in your game, such as when the player passed one level, and YMCA allows developers construct customized yaEvent for such purpose: 
 
-	yaEvent *yaEventCreate(const char *name);
+    yaEvent *yaEventCreate(const char *name);
 
     void yaAddNumber(yaEvent *event,const char*key,double value);
 
     void yaAddString(yaEvent *event,const char *key, const char *value); 
+
+and track the custom event with:
     
     void yaTrack(yaEvent *event);		
 
