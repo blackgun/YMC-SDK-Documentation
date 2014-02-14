@@ -137,9 +137,6 @@ To use YMC Analytics service, please use the APIs declared in the header file YM
 
 	#include "YMCA.h"
 
-### yaEvent
-Events describe things that happen in your game, usually as the result of user interaction; for example, when a player conquered a level, or purchased some equipment, you can send an event to record the incident.
-
 ### Initialization
 Please call yaInit to initialize with your Game's YMC ID:
 
@@ -154,6 +151,10 @@ Example:
 
      yaCharge("USD",6.99);
      yaCharge("RMB",35);
+
+
+### yaEvent
+Events describe things that happen in your game, usually as the result of user interaction; for example, when a player conquered a level, or purchased some equipment, you can send an event to record the incident.
 	
 ### Track custom events
 Sometimes you might want to track other specific things happened in your game, such as when the player passed one level, and YMCA allows developers construct customized yaEvent for such purpose: 
